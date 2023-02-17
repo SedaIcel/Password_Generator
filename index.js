@@ -101,19 +101,20 @@ let num = 15
 
 generateBtn.addEventListener("click", function () {
   generatePassword()
-
-  }
+  }  
 );
 
 
 function generatePassword(){
+  passwordOne.textContent = ""
+  passwordTwo.textContent = ""
   for(let i = 0; i < num; i++){
     let ch_one = characters[Math.floor(Math.random()*characters.length)]
     let ch_two = characters[Math.floor(Math.random()*characters.length)]
     passwordOne.textContent += ch_one
     passwordTwo.textContent += ch_two
-
   }
 }
+
 
 
