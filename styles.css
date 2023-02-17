@@ -61,6 +61,7 @@ p {
   display: flex;
   gap: 35px;
   justify-content: space-between;
+
   
 }
 .resulted-password {
@@ -68,7 +69,11 @@ p {
   height: 40px;
   background: #273549;
   border-radius: 6px;
-  text-align: center;
   padding: 5px 15px;
   color: #55f991;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

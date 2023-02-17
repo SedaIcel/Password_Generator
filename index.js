@@ -93,6 +93,27 @@ const characters = [
 ];
 
 let generateBtn = document.getElementById("generate-btn");
-generateBtn.addEventListener(click, function () {
-  console.log("Button clicked from event listener");
-});
+
+let passwordOne = document.getElementById("generated-psswrd-one")
+let passwordTwo = document.getElementById("generated-psswrd-two")
+let num = 15
+
+
+generateBtn.addEventListener("click", function () {
+  generatePassword()
+
+  }
+);
+
+
+function generatePassword(){
+  for(let i = 0; i < num; i++){
+    let ch_one = characters[Math.floor(Math.random()*characters.length)]
+    let ch_two = characters[Math.floor(Math.random()*characters.length)]
+    passwordOne.textContent += ch_one
+    passwordTwo.textContent += ch_two
+
+  }
+}
+
+
